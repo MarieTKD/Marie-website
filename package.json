@@ -1,0 +1,24 @@
+{
+  "name": "marie-website",
+  "version": "1.0.0",
+  "description": "My personal website, developed for practice, where I can be creative and have some fun...",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./CSS/input.css -o ./CSS/styles.css",
+    "watch": "tailwindcss -i ./CSS/input.css -o ./CSS/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarieTKD/Marie-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarieTKD/Marie-website/issues"
+  },
+  "homepage": "https://github.com/MarieTKD/Marie-website#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.2"
+  }
+}

@@ -5,26 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
+    
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Marie's website</title>
 </head>
-<body>
-    <nav>
-        <img class="logo"  src="images/cropped-logo.png" alt="My logo">  
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="">Art</a></li>
-                <li><a href="">Blog</a></li>
+<body class="m-0 p-0">
+    <!-- Navbar -->
+    <nav class="relative container w-auto mx-12 p-2">
+        <!-- flex container -->
+        <div class="flex items-center justify-between">
+            <!-- logo -->
+            <div>
+                <img class="w-28" src="images/cropped-logo.png" alt="My logo">
+            </div>
+            <!-- Menu Items -->
+            <ul class="hidden md:flex space-x-12 text-xl">
+                <li><a href="#hero" class="hover:text-orange-400">Home</a></li>
+                <li><a href="" class="hover:text-orange-400">Art</a></li>
+                <li><a href="" class="hover:text-orange-400">Blog</a></li>
             </ul>
+        </div>
     </nav>
 
-    <section id="hero">
-        <h1>Hi! I'm Marie,</h1>
-        <div>a creative web developer</div>
-        <img class="tree" src="images/tree-butterflies.png" alt="drawing of a tree and butterflies">
+    <!-- Hero section -->
+    <section id="hero" class="bg-lightGreen flex flex-col items-center p-7 font-nanum">
+        <!-- Flex Container -->
+        
+        <h1 class="text-6xl md:text-8xl p-7">Hi! I'm Marie,</h1>
+        <span class="text-4xl md:text-4xl p-5">a creative web developer</span>
+        <div class="ml-96">
+            <img class="w-72 md:w-96" src="images/tree-butterflies.png" alt="drawing of a tree and butterflies">
+        </div>
+        <div class="flex flex-row ml-50">
+            <img src="images/dustBall.png" alt="bouncing dustball" class="w-5 h-5 md:h-7 md:w-7 m-2 animate-bounce">
+            <img src="images/dustBall.png" alt="bouncing dustball" class="w-5 h-5 md:h-7 md:w-7 m-2 animate-bounce animation-delay-200">
+            <img src="images/dustBall.png" alt="bouncing dustball" class="w-5 h-5 md:h-7 md:w-7 m-2 animate-bounce animation-delay-400">
+        </div>
     </section>
     <section class="middle"></section>
 
